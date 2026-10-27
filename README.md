@@ -13,6 +13,7 @@ In my spare time I build software that makes numbers traceable: research pipelin
 |---|---|
 | **[dax-quant-research](https://github.com/Tristan-sketch/dax-quant-research)**<br>Point-in-time factor study of DAX stocks against the S&P 500: survivorship-free universe, realistic trading costs, deflated Sharpe ratios. A LaTeX paper and a website regenerate themselves every month.<br>[Live website](https://tristan-sketch.github.io/dax-quant-research/) · [Paper (PDF)](https://tristan-sketch.github.io/dax-quant-research/report.pdf) | Python · pandas · statsmodels · matplotlib · LaTeX · GitHub Actions |
 | **[cv-website](https://github.com/Tristan-sketch/cv-website)**<br>My CV as an interactive pixel device with an audit trail: every entry points to its evidence.<br>[Live website](https://tristan-sketch.github.io/cv-website/) | Python · Flask · Jinja · CSS · GitHub Pages |
+| **[blackjack-counter](https://github.com/Tristan-sketch/blackjack-counter)**<br>Desktop app built from my blackjack spreadsheet: a basic-strategy chart with a Wong Halves card counter. The true count re-colours the chart through index plays, alongside next-card odds and bet sizing. | Python · tkinter · pytest · GitHub Actions |
 | **[BlogPost](https://github.com/Tristan-sketch/BlogPost)**<br>Full-stack blog platform from my internship at Titanom Technologies: posts, themes, comments and self-written session authentication. | Next.js 14 · TypeScript · Tailwind CSS · SQLite |
 
 ### Toolbox
