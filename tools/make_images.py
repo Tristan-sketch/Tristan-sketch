@@ -1,7 +1,7 @@
 """Draw every image of this GitHub account in one style.
 
-The look comes from my CV website: a dark page with a dot grid, an orange
-pixel screen and a small pixel font. One script draws the profile picture,
+The look: a dark page with a dot grid, an orange pixel screen and a small
+pixel font. One script draws the profile picture,
 the banner of the profile README and the banner of each project, so they
 always match.
 
@@ -70,7 +70,7 @@ GLYPHS = {
     "&": [".##..", "#..#.", "#.#..", ".#...", "#.#.#", "#..#.", ".##.#"],
 }
 
-# Pixel sprites. The avatar is the same as on the CV website.
+# Pixel sprites.
 SPRITES = {
     "avatar": [
         ".....######.....",
@@ -91,15 +91,17 @@ SPRITES = {
         "..############..",
         ".##############.",
     ],
-    # cv-website: the check mark of the audit trail
-    "check": [
-        "........#",
-        ".......##",
-        "#.....##.",
-        "##...##..",
-        ".##.##...",
-        "..###....",
-        "...#.....",
+    # kelly-under-uncertainty: growth rate over the stake, peaking at Kelly
+    "curve": [
+        ".....#.....",
+        "...#####...",
+        "..##...##..",
+        ".##.....##.",
+        ".#.......#.",
+        "##.......##",
+        "#.........#",
+        "...........",
+        "###########",
     ],
     # dax-quant-research: a price chart
     "chart": [
@@ -142,8 +144,8 @@ SPRITES = {
 
 # Every banner: the sprite on the orange screen, a title and one line below it.
 BANNERS = {
-    "profile": ("avatar", "TRISTAN HARTENSTEIN", "AUDIT · TAX · CODE"),
-    "cv-website": ("check", "CV WEBSITE", "PIXEL DEVICE · TAX FORM · AUDIT TRAIL"),
+    "profile": ("avatar", "TRISTAN HARTENSTEIN", "GAME THEORY · PORTFOLIOS · CODE"),
+    "kelly-under-uncertainty": ("curve", "KELLY CRITERION", "ESTIMATION RISK · SHRINKAGE · GROWTH"),
     "dax-quant-research": ("chart", "DAX QUANT RESEARCH", "FACTOR STUDY · UPDATED EVERY MONTH"),
     "blackjack-counter": ("spade", "BLACKJACK COUNTER", "WONG HALVES · INDEX PLAYS · ODDS"),
     "BlogPost": ("page", "BLOGPOST", "POSTS · COMMENTS · SESSION AUTH"),

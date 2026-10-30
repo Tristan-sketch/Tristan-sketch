@@ -1,39 +1,52 @@
-![Tristan Hartenstein · audit, tax, code](assets/banner.png)
+![Tristan Hartenstein · game theory, portfolios, code](assets/banner.png)
 
 # Tristan Hartenstein
 
-Dual student in **auditing** (B.Sc. Wirtschaftsprüfung, DHBW) with practical phases at **Deloitte**, Audit & Assurance, in the Munich area.
-In my spare time I build software that makes numbers traceable: a research pipeline that rebuilds itself from raw data, web apps, and a CV where every claim links to its source.
+Quantitative research on **decisions under uncertainty**: how much to bet, how to allocate, and how to tell
+an edge from noise. Every project here is a small research study: a question, a method that can be checked,
+code that regenerates every number, and a paper that says what did not work.
 
-**Interests:** audit and financial reporting · corporate tax · transactions · quantitative research · data engineering
+**Research focus**
+
+- **Portfolio construction and empirical finance:** point-in-time data, trading costs, honest statistics
+  (deflated Sharpe ratios, multiple-testing corrections).
+- **Game theory and betting:** Kelly sizing, finite-shoe probability, equilibrium computation.
+- **The link between them:** estimation risk. A strategy is only as good as what you can know about it
+  from the data you have.
 
 ---
 
-### Projects
+### Research
 
-| Project | Stack |
-|---|---|
-| **[CV Website](https://github.com/Tristan-sketch/cv-website)**<br>My CV in two versions: an interactive pixel device, and a tax-return form with an income tax calculator for § 32a EStG. Every entry points to its evidence.<br>[Live website](https://tristan-sketch.github.io/cv-website/) · [Tax version](https://tristan-sketch.github.io/cv-website/steuern.html) | Python · Flask · Jinja · CSS · GitHub Pages |
-| **[DAX Quant Research](https://github.com/Tristan-sketch/dax-quant-research)**<br>Point-in-time study of five price-based equity factors in the DAX, benchmarked against the DAX and the S&P 500: index membership rebuilt from documented changes, explicit trading costs, deflated Sharpe ratios. A LaTeX paper and a website regenerate themselves every month.<br>[Live website](https://tristan-sketch.github.io/dax-quant-research/) · [Paper (PDF)](https://tristan-sketch.github.io/dax-quant-research/report.pdf) | Python · pandas · statsmodels · matplotlib · LaTeX · GitHub Actions |
-| **[BlogPost](https://github.com/Tristan-sketch/BlogPost)**<br>Full-stack blog platform from my internship at Titanom Technologies: posts, themes, comments and self-written session authentication. | Next.js 14 · TypeScript · Tailwind CSS · SQLite |
-| **[Blackjack Counter](https://github.com/Tristan-sketch/blackjack-counter)**<br>Desktop app built from my blackjack spreadsheet: a basic-strategy chart with a Wong Halves card counter. The true count re-colours the chart through index plays, alongside next-card odds and bet sizing. | Python · tkinter · pytest · GitHub Actions |
+| Project | Question | Stack |
+|---|---|---|
+| **[Kelly Under Uncertainty](https://github.com/Tristan-sketch/kelly-under-uncertainty)**<br>[Website](https://tristan-sketch.github.io/kelly-under-uncertainty/) · [Paper (PDF)](https://tristan-sketch.github.io/kelly-under-uncertainty/report.pdf) | How much should a Kelly bettor shrink the stake when the edge is only estimated? A closed form, exact binomial results for discrete bets, and out-of-sample evidence from six DAX factor portfolios. | Python · NumPy · SciPy · LaTeX |
+| **[DAX Quant Research](https://github.com/Tristan-sketch/dax-quant-research)**<br>[Website](https://tristan-sketch.github.io/dax-quant-research/) · [Paper (PDF)](https://tristan-sketch.github.io/dax-quant-research/report.pdf) | Do documented equity factors survive in the DAX once the universe is point in time, trades cost money and every variant counts as a trial? Updated every month. | Python · pandas · statsmodels · LaTeX · GitHub Actions |
+| **[Blackjack Counter](https://github.com/Tristan-sketch/blackjack-counter)** | Blackjack as a finite-shoe probability model: basic strategy, a Wong Halves counter, index plays, next-card odds and Kelly bet sizing. | Python · tkinter · pytest |
+
+**Next:** counterfactual regret minimisation for Kuhn and Leduc poker, measured against the known
+equilibrium; then out-of-sample portfolio optimisation with shrinkage on the DAX universe.
+
+<sub>Earlier: [BlogPost](https://github.com/Tristan-sketch/BlogPost), a full-stack Next.js app (archived).</sub>
+
+### How the projects are built
+
+- **One command rebuilds everything:** data, results, figures, the LaTeX paper and the website.
+- **No hard-coded results:** every number in a paper is a generated macro, so text cannot go stale.
+- **Tests for the mathematics:** closed forms are checked against numerical integration and simulation,
+  backtests against look-ahead.
+- **Limitations are part of the result.**
 
 ### Toolbox
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=38BDF8)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![statsmodels](https://img.shields.io/badge/statsmodels-4051B5?style=flat-square)
+![matplotlib](https://img.shields.io/badge/matplotlib-11557C?style=flat-square)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=latex&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
-### Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Tristan_Hartenstein-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tristan-hartenstein-7b6a43306)
-[![CV](https://img.shields.io/badge/CV-tristan--sketch.github.io-F97316?style=flat-square)](https://tristan-sketch.github.io/cv-website/)
 
 <sub>All banners and the avatar on this account are pixel art drawn by one script: [`tools/make_images.py`](tools/make_images.py).</sub>
