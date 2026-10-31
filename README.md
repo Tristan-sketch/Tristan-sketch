@@ -21,11 +21,11 @@ code that regenerates every number, and a paper that says what did not work.
 | Project | Question | Stack |
 |---|---|---|
 | **[Kelly Under Uncertainty](https://github.com/Tristan-sketch/kelly-under-uncertainty)**<br>[Website](https://tristan-sketch.github.io/kelly-under-uncertainty/) · [Paper (PDF)](https://tristan-sketch.github.io/kelly-under-uncertainty/report.pdf) | How much should a Kelly bettor shrink the stake when the edge is only estimated? A closed form, exact binomial results for discrete bets, and out-of-sample evidence from six DAX factor portfolios. | Python · NumPy · SciPy · LaTeX |
+| **[Counterfactual Regret](https://github.com/Tristan-sketch/counterfactual-regret)**<br>[Website](https://tristan-sketch.github.io/counterfactual-regret/) · [Paper (PDF)](https://tristan-sketch.github.io/counterfactual-regret/report.pdf) | How fast do CFR, CFR+, discounted CFR and Monte Carlo CFR find a Nash equilibrium? Solved from scratch on Kuhn poker and Leduc hold'em, scored by exact exploitability and checked against the analytic Kuhn equilibrium. | Python · NumPy · LaTeX |
 | **[DAX Quant Research](https://github.com/Tristan-sketch/dax-quant-research)**<br>[Website](https://tristan-sketch.github.io/dax-quant-research/) · [Paper (PDF)](https://tristan-sketch.github.io/dax-quant-research/report.pdf) | Do documented equity factors survive in the DAX once the universe is point in time, trades cost money and every variant counts as a trial? Updated every month. | Python · pandas · statsmodels · LaTeX · GitHub Actions |
 | **[Blackjack Counter](https://github.com/Tristan-sketch/blackjack-counter)** | Blackjack as a finite-shoe probability model: basic strategy, a Wong Halves counter, index plays, next-card odds and Kelly bet sizing. | Python · tkinter · pytest |
 
-**Next:** counterfactual regret minimisation for Kuhn and Leduc poker, measured against the known
-equilibrium; then out-of-sample portfolio optimisation with shrinkage on the DAX universe.
+**Next:** out-of-sample portfolio optimisation with covariance shrinkage on the point-in-time DAX universe.
 
 <sub>Earlier: [BlogPost](https://github.com/Tristan-sketch/BlogPost), a full-stack Next.js app (archived).</sub>
 

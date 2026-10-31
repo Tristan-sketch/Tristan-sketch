@@ -91,6 +91,18 @@ SPRITES = {
         "..############..",
         ".##############.",
     ],
+    # counterfactual-regret: a game tree
+    "tree": [
+        "....###....",
+        "....###....",
+        ".....#.....",
+        "..#######..",
+        "..#.....#..",
+        ".###...###.",
+        ".###...###.",
+        "..#.....#..",
+        "#####.#####",
+    ],
     # kelly-under-uncertainty: growth rate over the stake, peaking at Kelly
     "curve": [
         ".....#.....",
@@ -146,6 +158,7 @@ SPRITES = {
 BANNERS = {
     "profile": ("avatar", "TRISTAN HARTENSTEIN", "GAME THEORY · PORTFOLIOS · CODE"),
     "kelly-under-uncertainty": ("curve", "KELLY CRITERION", "ESTIMATION RISK · SHRINKAGE · GROWTH"),
+    "counterfactual-regret": ("tree", "COUNTERFACTUAL REGRET", "CFR · MCCFR · KUHN · LEDUC"),
     "dax-quant-research": ("chart", "DAX QUANT RESEARCH", "FACTOR STUDY · UPDATED EVERY MONTH"),
     "blackjack-counter": ("spade", "BLACKJACK COUNTER", "WONG HALVES · INDEX PLAYS · ODDS"),
     "BlogPost": ("page", "BLOGPOST", "POSTS · COMMENTS · SESSION AUTH"),
